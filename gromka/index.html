@@ -14,7 +14,7 @@
   VK.Auth.getLoginStatus(function (res) {
     console.log(res);
   });
-  VK.Api.call('users.get', {user_ids: 1}, function(res) {
+  VK.Api.call('wall.post', {owner_id: -138155699, message: 'Hello', from_group: 1}, function (res) {
     console.log(res);
   });
 </script>
